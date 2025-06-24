@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+    <Style src="GMWindows.uss" />
+    
+    <VisualElement class="gm-window">
+        <!-- 主要内容区域 -->
+        <VisualElement class="content">
+            <!-- 左侧面板 -->
+            <VisualElement class="left-panel">
+                <!-- 搜索栏 -->
+                <VisualElement class="search-bar">
+                    <TextField name="search-field" class="search-field" />
+                </VisualElement>
+                
+                <!-- 分组标签页 -->
+                <VisualElement name="tab-group" class="tab-group" />
+                
+                <!-- 命令列表 -->
+                <ScrollView class="command-list">
+                    <VisualElement name="command-container" class="command-container" />
+                </ScrollView>
+            </VisualElement>
+
+            <!-- 右侧面板 -->
+            <VisualElement class="right-panel">
+                <!-- 参数区域容器 -->
+                <VisualElement class="param-section">
+                    <!-- 命令信息区域 -->
+                    <VisualElement class="command-info">
+                        <Label name="command-name" class="command-name" />
+                        <Label name="command-desc" class="command-desc" />
+                        <Label name="command-usage" class="command-usage" />
+                    </VisualElement>
+
+                    <!-- 参数输入区域 -->
+                    <ScrollView class="param-scroll">
+                        <VisualElement name="param-container" class="param-container" />
+                    </ScrollView>
+
+                    <!-- 执行按钮 -->
+                    <Button text="执行命令" name="execute-btn" class="execute-btn" />
+                </VisualElement>
+
+                <!-- 历史记录区域 -->
+                <VisualElement class="history-section">
+                    <VisualElement class="history-header">
+                        <Button text="历史记录" name="history-tab" class="tab-btn selected" />
+                        <Button text="收藏夹" name="favorite-tab" class="tab-btn" />
+                        <Button text="清空" name="clear-btn" class="clear-btn" />
+                    </VisualElement>
+                    
+                    <ScrollView class="history-list">
+                        <VisualElement name="history-container" class="history-container" />
+                    </ScrollView>
+                </VisualElement>
+            </VisualElement>
+        </VisualElement>
+    </VisualElement>
+</UXML> 

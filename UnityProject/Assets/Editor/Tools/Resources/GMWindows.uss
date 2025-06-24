@@ -1,0 +1,381 @@
+/* 基础样式 */
+.gm-window {
+    flex-grow: 1;
+    background-color: rgb(40, 40, 40);
+    padding: 8px;
+}
+
+/* 通用按钮样式 */
+.button {
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(80, 80, 80);
+    color: rgb(200, 200, 200);
+    padding: 4px 8px;
+    margin: 2px;
+    height: 24px;
+}
+
+.button:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+/* 主要内容布局 */
+.content {
+    flex-grow: 1;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+/* 左侧面板 */
+.left-panel {
+    width: 70%;
+    margin-right: 8px;
+}
+
+/* 分组标签 */
+.tab-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.tab-btn {
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(80, 80, 80);
+    color: rgb(200, 200, 200);
+    padding: 4px 12px;
+    margin: 2px;
+    height: 24px;
+}
+
+.tab-btn.selected {
+    background-color: rgb(80, 80, 80);
+    border-color: rgb(100, 100, 100);
+}
+
+/* 命令列表 */
+.command-list {
+    flex-grow: 1;
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+}
+
+.command-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.command-btn {
+    width: 16%;
+    height: 24px;
+    margin: 1px;
+    -unity-text-align: middle-center;
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(80, 80, 80);
+    color: rgb(200, 200, 200);
+    padding: 4px;
+}
+
+.command-btn:hover {
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(100, 100, 100);
+}
+
+/* 右侧面板 */
+.right-panel {
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    padding: 8px;
+}
+
+/* 命令信息和参数区域容器 */
+.param-section {
+    height: 50%;
+    min-height: 200px;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+/* 命令信息 */
+.command-info {
+    margin-bottom: 8px;
+}
+
+.command-name {
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgb(220, 220, 220);
+    margin-bottom: 4px;
+}
+
+.command-desc,
+.command-usage {
+    font-size: 12px;
+    color: rgb(180, 180, 180);
+    white-space: normal;
+    margin-bottom: 4px;
+}
+
+/* 参数区域 */
+.param-scroll {
+    flex-grow: 1;
+    background-color: rgb(50, 50, 50);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    overflow: visible;
+}
+
+.param-container {
+    padding: 4px;
+}
+
+.param-row {
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 0;
+    padding: 4px;
+    background-color: rgb(50, 50, 50);
+    min-height: 24px;
+    overflow: visible;
+}
+
+.param-label {
+    min-width: 80px;
+    margin-right: 8px;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    -unity-text-align: middle-left;
+}
+
+.param-input {
+    flex-grow: 1;
+    margin-right: 8px;
+}
+
+.param-input > .unity-text-field__input {
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    padding: 2px 4px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+.param-desc {
+    min-width: 120px;
+    color: rgb(150, 150, 150);
+    font-size: 11px;
+    -unity-text-align: middle-left;
+    white-space: normal;
+}
+
+/* 执行按钮 */
+.execute-btn {
+    height: 30px;
+    margin: 8px 0;
+    -unity-font-style: bold;
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(80, 80, 80);
+    color: rgb(200, 200, 200);
+}
+
+.execute-btn:hover {
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(100, 100, 100);
+}
+
+/* 历史记录区域 */
+.history-section {
+    height: 50%;
+    min-height: 200px;
+    flex-direction: column;
+}
+
+.history-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.history-list {
+    flex-grow: 1;
+    background-color: rgb(50, 50, 50);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    overflow: hidden;
+}
+
+.history-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    margin: 1px;
+    background-color: rgb(55, 55, 55);
+}
+
+.history-command {
+    flex-grow: 1;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+}
+
+.history-status {
+    width: 24px;
+    -unity-text-align: middle-center;
+}
+
+.history-favorite {
+    width: 24px;
+    -unity-text-align: middle-center;
+}
+
+/* 搜索栏 */
+.search-bar {
+    margin-bottom: 8px;
+}
+
+.search-field {
+    flex-grow: 1;
+}
+
+.search-field > .unity-text-field__input {
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(80, 80, 80);
+    padding: 4px;
+    height: 24px;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+}
+
+/* Options 参数样式 */
+.options-container {
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    position: relative;
+}
+
+.options-input {
+    flex-grow: 1;
+}
+
+.options-input > .unity-text-field__input {
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    padding: 2px 24px 2px 4px;
+    height: 22px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    -unity-text-align: middle-left;
+}
+
+.dropdown-button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-width: 0;
+    color: rgb(150, 150, 150);
+    font-size: 8px;
+    -unity-text-align: middle-center;
+}
+
+.dropdown-button:hover {
+    color: rgb(200, 200, 200);
+}
+
+/* 选项窗口样式 */
+.options-search {
+    margin: 8px;
+}
+
+.options-search > .unity-text-field__input {
+    background-color: rgb(45, 45, 45);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    padding: 4px;
+    height: 24px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+.options-list {
+    flex-grow: 1;
+    margin: 8px;
+}
+
+.option-item {
+    height: 24px;
+    margin: 1px;
+    padding: 0 4px;
+    background-color: rgb(50, 50, 50);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    -unity-text-align: middle-left;
+}
+
+.option-item:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.option-item.selected {
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(100, 100, 100);
+}
+
+/* 标题栏样式 */
+.title-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: rgb(60, 60, 60);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(80, 80, 80);
+}
+
+.title-label {
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.close-button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-width: 0;
+    color: rgb(200, 200, 200);
+    font-size: 16px;
+    -unity-text-align: middle-center;
+}
+
+.close-button:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* 输入框只读样式 */
+.options-input > .unity-text-field__input:read-only {
+    background-color: rgb(45, 45, 45);
+    color: rgb(200, 200, 200);
+} 
