@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Reflection;
-using GameConfig.item;
 using GameLogic;
 using TEngine;
 #pragma warning disable CS0436
@@ -24,10 +23,7 @@ public partial class GameApp
         Log.Warning("======= 看到此条日志代表你成功运行了热更新代码 =======");
         Log.Warning("======= Entrance GameApp =======");
         Utility.Unity.AddDestroyListener(Release);
-
-        Item TbItem = ConfigSystem.Instance.Tables.TbItem.GetOrDefault(10001);
-        Log.Warning("TbItem: {0}", TbItem.ToString());
-        
+        Log.Warning("======= StartGameLogic =======");
         StartGameLogic();
     }
     
