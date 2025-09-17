@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WorkSpace\\ZGame\\Tools\\GameEventSourceGenerator\\SourceGenerator\\SourceGenerator.csproj": {}
+    "/Users/zhongdaiqi/Documents/GitHub/TEngine/Tools/GameEventSourceGenerator/SourceGenerator/SourceGenerator.csproj": {}
   },
   "projects": {
-    "E:\\WorkSpace\\ZGame\\Tools\\GameEventSourceGenerator\\SourceGenerator\\SourceGenerator.csproj": {
+    "/Users/zhongdaiqi/Documents/GitHub/TEngine/Tools/GameEventSourceGenerator/SourceGenerator/SourceGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WorkSpace\\ZGame\\Tools\\GameEventSourceGenerator\\SourceGenerator\\SourceGenerator.csproj",
+        "projectUniqueName": "/Users/zhongdaiqi/Documents/GitHub/TEngine/Tools/GameEventSourceGenerator/SourceGenerator/SourceGenerator.csproj",
         "projectName": "SourceGenerator",
-        "projectPath": "E:\\WorkSpace\\ZGame\\Tools\\GameEventSourceGenerator\\SourceGenerator\\SourceGenerator.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\WorkSpace\\ZGame\\Tools\\GameEventSourceGenerator\\SourceGenerator\\obj\\",
+        "projectPath": "/Users/zhongdaiqi/Documents/GitHub/TEngine/Tools/GameEventSourceGenerator/SourceGenerator/SourceGenerator.csproj",
+        "packagesPath": "/Users/zhongdaiqi/.nuget/packages/",
+        "outputPath": "/Users/zhongdaiqi/Documents/GitHub/TEngine/Tools/GameEventSourceGenerator/SourceGenerator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/zhongdaiqi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +67,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
         }
       }
     }
